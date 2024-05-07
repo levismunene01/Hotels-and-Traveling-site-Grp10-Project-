@@ -1,0 +1,320 @@
+{"Hotels": [
+    {
+      "id": "1",
+      "Name": "Soroi Mara Bush Camp",
+      "Destination": "The Maasai Mara",
+      "Picture": "https://www.chaloafrica.com/wp-content/uploads/2023/05/Soroi-Luxury-Migration-Camp-Tent-770x250.jpg",
+      "Price Per night":"KSH 196,370",
+      "Rating":"4 Star Hotel",
+      "Amentities":"Complimentary WiFi , Photography Lounge ,Guided Bush Walks, Spa Treatments"
+    },
+    {
+      "id": "2",
+      "Name": "The social House",
+      "Destination": "Nairobi",
+      "Picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/273799692.jpg?k=c98d1318a9bc1e09458f7bf37ea60ddc2b3a25b2e1858bad56d8786cd13e7bfe&o=&hp=1",
+      "Price Per night":"",
+      "Rating":"4 Star Hotel",
+      "Amentities":""
+    },
+    {
+      "id":"3",
+      "Name": "Cardamom House",
+      "Destination": "Kilifi",
+      "Picture":"https://secludedafrica.com/wp-content/uploads/2023/10/DJI_0971-1-scaled.jpg",
+      "Price Per night":"",
+      "Rating":"",
+      "Amentities":""
+    },
+    {
+        "id":"4",
+        "Name":"Emara Ole-Sereni",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""
+    },
+    {
+        "id":"5",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""
+    },
+    {
+        "id":"6",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":"" 
+    },
+    {
+        "id":"7",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"8",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"9",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"10",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"11",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"12",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"13",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"14",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"15",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"16",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"17",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"18",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"19",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"20",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"21",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"22",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"23",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"24",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"25",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"26",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"27",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"28",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"29",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"30",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"31",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"32",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"33",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"34",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    },
+    {
+        "id":"35",
+        "Name":"",
+        "Destination":"",
+        "Picture":"",
+        "Price Per night":"",
+        "Rating":"",
+        "Amentities":""  
+    }
+   
+    
+  ]
+}
