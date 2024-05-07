@@ -163,20 +163,20 @@
     },
     {
         "id":"19",
-        "Name":"",
-        "Destination":"",
+        "Name":"Hemingways Watamu",
+        "Destination":"Watamu,Kilifi County",
         "Picture":"",
-        "Price Per night":"",
-        "Rating":"",
+        "Price Per night":"KSH 35.444",
+        "Rating":"5 Star Hotel",
         "Amentities":""  
     },
     {
         "id":"20",
-        "Name":"",
-        "Destination":"",
+        "Name":"Rock and Sea Resort ",
+        "Destination":"Watamu,Kilifi County",
         "Picture":"",
-        "Price Per night":"",
-        "Rating":"",
+        "Price Per night":"KSH 36,603",
+        "Rating":"4 Star Hotel",
         "Amentities":""  
     },
     {
