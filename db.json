@@ -15,32 +15,32 @@
       "Picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/273799692.jpg?k=c98d1318a9bc1e09458f7bf37ea60ddc2b3a25b2e1858bad56d8786cd13e7bfe&o=&hp=1",
       "Price Per night":"",
       "Rating":"4 Star Hotel",
-      "Amentities":""
+      "Amentities":"Daily housekeeping . 3 restaurants and bar/lounge. Breakfast available. Fitness center. Coffee shop/cafe.  Airport pick-up service."
     },
     {
       "id":"3",
       "Name": "Cardamom House",
       "Destination": "Kilifi",
       "Picture":"https://secludedafrica.com/wp-content/uploads/2023/10/DJI_0971-1-scaled.jpg",
-      "Price Per night":"",
-      "Rating":"",
-      "Amentities":""
+      "Price Per night":"KSH 76,000",
+      "Rating":"5 Star Hotel",
+      "Amentities":"Swimming Pool.Spa.Restaurant.Indoor Games.Fireplace.Jungle Safari.Kids Play Area.Bar."
     },
     {
         "id":"4",
         "Name":"Emara Ole-Sereni",
         "Destination":"Nairobi",
-        "Picture":"",
+        "Picture":"https://emara.ole-sereni.com/wp-content/uploads/2023/01/s.jpg",
         "Price Per night":"KSH 20.668",
         "Rating":"5 Star Hotel",
-        "Amentities":""
+        "Amentities":"Heated swimming pool. Gift Shop .Duma Spa .In House Laundry. Travel Desk"
     },
     {
         "id":"5",
         "Name":"Naivasha Sopa Lodge",
         "Destination":"Lake Naivasha",
-        "Picture":"",
-        "Price Per night":"KSH 48,378",
+        "Picture":"https://naivashahotels.com/kenya/wp-content/uploads/2022/06/Lake-Naivasha-Sopa-Resort-26-850x540.jpg",
+        "Price Per night":"KSH 45,694",
         "Rating":"3 Star Hotel",
         "Amentities":"Free Wi-Fi, Outdoor Pool, Free parking"
     },
@@ -48,34 +48,34 @@
         "id":"6",
         "Name":"The Boma Nairobi",
         "Destination":"Nairobi",
-        "Picture":"",
+        "Picture":"https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,c_crop,q_80,fl_progressive/w_600,h_337,f_auto,c_fit/the-boma-nairobi/homepage_1_qhsqxb",
         "Price Per night":"KSH 17,098",
         "Rating":"5 Star Hotel",
-        "Amentities":"" 
+        "Amentities":"Spa. Travel Desk. Gift Shop. Fitness Center. Sauna " 
     },
     {
         "id":"7",
         "Name":"Nomad Beach Resort",
         "Destination":"Diani,Ukunda",
-        "Picture":"",
+        "Picture":"https://theexpatmummy.com/wp-content/uploads/2018/02/screen-shot-2018-02-07-at-10-32-50-am.png",
         "Price Per night":"KSH 51,648",
         "Rating":"4 Star Hotel",
-        "Amentities":""  
+        "Amentities":"Free breakfast buffet.Poolside bar.Private Beach"  
     },
     {
         "id":"8",
         "Name":"Baobab Beach Resort & Spa",
         "Destination":"Diani,Ukunda",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/172099289.jpg?k=ffbbfc99a282991fee0b8e8b542adfc340c8c6d4132817fcfc8d393be01bbcfd&o=&hp=1",
         "Price Per night":"KSH 34,163",
         "Rating":"4 Star Hotel",
-        "Amentities":""  
+        "Amentities":"Poolside bar.Private Beach"  
     },
     {
         "id":"9",
         "Name":"Southern Palms Beach Resort",
         "Destination":"Diani,Ukunda",
-        "Picture":"",
+        "Picture":"https://www.nairobinationalparkkenya.com/wp-content/uploads/2022/08/SPBR-Sept-2019-Hotel-0059-DJI_0105-scaled-1.jpg",
         "Price Per night":"KSH 26,900",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -84,7 +84,7 @@
         "id":"10",
         "Name":"The Maji Beach Boutique Hotel",
         "Destination":"Diani,Ukunda",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/35318115.jpg?k=0f8b4a172324635e2f782b981cddd9caf9a410f2adc0664e3e41394515d7542a&o=&hp=1",
         "Price Per night":"KSH 67,729",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -93,7 +93,7 @@
         "id":"11",
         "Name":"Pinewood Beach Resort and Spa",
         "Destination":"Diani,Ukunda",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/312510599.jpg?k=b98814a0c27f3071a80b5765609e7261b73b4cc852dcc2bc561cc1268d73d6af&o=&hp=1",
         "Price Per night":"KSH 20,636",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -102,7 +102,7 @@
         "id":"12",
         "Name":"PrideInn Mara Camp & Cottages",
         "Destination":"The Maasai Mara National Reserve",
-        "Picture":"",
+        "Picture":"https://citizentv.s3.amazonaws.com/41309/conversions/PrideInn-Mara-og_image.webp",
         "Price Per night":"KSH 45,694",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -111,7 +111,7 @@
         "id":"13",
         "Name":"Muthu Keekorok Lodge, Maasai Mara,Narok",
         "Destination":"The Maasai Mara",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/79557431.jpg?k=5bd8c718016b88531e7739254406362de06875cb54c3b0fa250b7480164a06bf&o=&hp=1",
         "Price Per night":"KSH 96,480",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -120,7 +120,7 @@
         "id":"14",
         "Name":"Fairmont Mara Safari Club ",
         "Destination":"The Maasai Mara National Reserve",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/43928043.jpg?k=eb9b8b96147cfdbbcbacf08892abfebb220f200d4ef4eaaad8d14f7f06557007&o=&hp=1",
         "Price Per night":"KSH 150,750",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -129,7 +129,7 @@
         "id":"15",
         "Name":"Entumoto Toto Camp",
         "Destination":"The Maasai Mara National Reserve",
-        "Picture":"",
+        "Picture":"https://images.trvl-media.com/lodging/20000000/19120000/19112400/19112358/w6026h3283x0y5-1961c0a7.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
         "Price Per night":"KSH 99,616",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -138,7 +138,7 @@
         "id":"16",
         "Name":"Neptune Mara Rianta Luxury Camp",
         "Destination":"The Maasai Mara",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/56452964.jpg?k=3777121d71744f1a491238eb53c4054c4b0665e9703212425ce2e33d17e7234e&o=&hp=1",
         "Price Per night":"KSH 134,481",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -147,7 +147,7 @@
         "id":"17",
         "Name":"Mara Maisha Camp",
         "Destination":"The Maasai Mara",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/380236649.jpg?k=a982a9f61b44fb3a311b703760c00f3f1c2febbc687a83406995e1f4c609a5a2&o=&hp=1",
         "Price Per night":"KSH 60,300",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -156,7 +156,7 @@
         "id":"18",
         "Name":"La Maison Royale Masai Mara ",
         "Destination":"The Maasai Mara",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/165432613.jpg?k=9a4d64d234899496dff1397b3f084209b4fe2a4f2f9a1668bf8f630b2075df2f&o=&hp=1",
         "Price Per night":"KSH 40,200",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -165,7 +165,7 @@
         "id":"19",
         "Name":"Hemingways Watamu",
         "Destination":"Watamu,Kilifi County",
-        "Picture":"",
+        "Picture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwzdg42Ld4V4bINJIGt8rzNkdNPADKZNu_g&usqp=CAU",
         "Price Per night":"KSH 35.444",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -174,7 +174,7 @@
         "id":"20",
         "Name":"Rock and Sea Resort ",
         "Destination":"Watamu,Kilifi County",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/218959844.jpg?k=17948ba8bdef14ed980839e231fb55fce6022bb188bcb4b3085f32337604b3ab&o=&hp=1",
         "Price Per night":"KSH 36,603",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -183,7 +183,7 @@
         "id":"21",
         "Name":"The Mida Creek Hotel",
         "Destination":"Watamu,Kilifi County",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/403917148.jpg?k=1536542bdbc34a732c464987eb84ccd06f620d66e1ae6d0a8bbcb333dc84722a&o=&hp=1",
         "Price Per night":"KSH 13,025",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -192,7 +192,7 @@
         "id":"22",
         "Name":"Medina palms",
         "Destination":"Watamu Beach,Watamu",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/29702211.jpg?k=c4e636c08acca33c1795bfbea5b943c1d7322e94351b10ad00fd6f26c2a5d0ed&o=&hp=1",
         "Price Per night":"KSH 30,632",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -201,7 +201,7 @@
         "id":"23",
         "Name":"Visiwa Beach Resort ",
         "Destination":"Watamu Beach,Watamu",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max500/480896879.jpg?k=182d1bfdfe45f03720c190a4f135bbd2eee2fa967950ec1fbd24d80fd9afe357&o=&hp=1",
         "Price Per night":"KSH 23,488",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -210,7 +210,7 @@
         "id":"24",
         "Name":"Turtle Bay Beach Club",
         "Destination":"Watamu Beach,Watamu",
-        "Picture":"",
+        "Picture":"https://theholidaydealers.com/wp-content/uploads/2022/06/Turtle-Bay-Watamu-Beach-Club-Watamu-5.jpg",
         "Price Per night":"KSH 25,460",
         "Rating":"3 Star Hotel",
         "Amentities":""  
@@ -219,7 +219,7 @@
         "id":"25",
         "Name":"White Bay PianoB",
         "Destination":"Watamu Beach,Watamu",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/511820890.jpg?k=7ae6de722b52980d51727280348bc268ad4a0d8145f5fb959e53357be9ace49b&o=&hp=1",
         "Price Per night":"KSH 52,059",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -228,7 +228,7 @@
         "id":"26",
         "Name":"Lion in the sun Billionaire Retreat Malindi ",
         "Destination":"Malindi",
-        "Picture":"",
+        "Picture":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/59/c5/5d/lion-in-the-sun-a-billionaire.jpg?w=700&h=-1&s=1",
         "Price Per night":"KSH 23,119",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -237,7 +237,7 @@
         "id":"27",
         "Name":"Saffron Garden Malindi",
         "Destination":"Malindi",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/499745538.jpg?k=bdfb0c6a62cb4911822b35e86148a12d3445405b377f6cb79d8d7bb2fbecc0a3&o=&hp=1",
         "Price Per night":"KSH 8.765",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -246,7 +246,7 @@
         "id":"28",
         "Name":"Hotel Villa Malindi",
         "Destination":"Malindi",
-        "Picture":"",
+        "Picture":"https://images.trvl-media.com/lodging/58000000/57650000/57646600/57646558/e7794318.jpg?impolicy=fcrop&w=608&h=342&p=0.5&q=mediumHigh",
         "Price Per night":"KSH 18,090",
         "Rating":"3 Star Hotel",
         "Amentities":""  
@@ -255,7 +255,7 @@
         "id":"29",
         "Name":"Lions' Luxury Eco Resort & Spa",
         "Destination":" Malindi",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/439165812.jpg?k=aa6ca4b6213c4c645fe031ec3ff5ed1bc4d67ac5ba1f5257aaa2933a4c4eb43c&o=&hp=1",
         "Price Per night":"KSH 13,176",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -264,7 +264,7 @@
         "id":"30",
         "Name":"Maneaters",
         "Destination":"Tsavo Taita Taveta county",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/42054841.jpg?k=7491814c811ae91c339ca07891383f2e8c068eab06940ad6be90d4d3927ac425&o=&hp=1",
         "Price Per night":"KSH 26,765",
         "Rating":"3 Star Hotel",
         "Amentities":""  
@@ -273,7 +273,7 @@
         "id":"31",
         "Name":"Kilaguni Serena Safari Lodge ",
         "Destination":"Tsavo Taita Taveta county",
-        "Picture":"",
+        "Picture":"https://www.porini.com/wp-content/uploads/2015/09/1277228544.jpg",
         "Price Per night":"KSH 33,406",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -282,7 +282,7 @@
         "id":"32",
         "Name":"Ashnil Aruba Lodge",
         "Destination":"Tsavo Taita Taveta county",
-        "Picture":"",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/94198477.jpg?k=a3e1cafd78d40c34e9cc4405de1df0a927e86da0041cd6e9457e4af45707909f&o=&hp=1",
         "Price Per night":"KSH 25,286",
         "Rating":"4 Star Hotel",
         "Amentities":""  
@@ -291,7 +291,7 @@
         "id":"33",
         "Name":"Lake Elementeite Serena Camp",
         "Destination":"Lake Elementeita, Nakuru County",
-        "Picture":"",
+        "Picture":"https://www.lakenakurukenya.com/wp-content/uploads/2021/09/ba6d9c744a1de02d891de5705e3497c24c60dd15-1600x1053-1.jpg",
         "Price Per night":"KSH 65,124",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -299,8 +299,8 @@
     {
         "id":"34",
         "Name":"Sarova Lion Hill Game Lodge",
-        "Destination":"",
-        "Picture":"",
+        "Destination":"Nakuru",
+        "Picture":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/180474865.jpg?k=1d7ce053d894f533f1f02ad7fdbc61b2f39077b15a1631dbcffc6b33a208e38c&o=&hp=1",
         "Price Per night":"KSH 62,176",
         "Rating":"5 Star Hotel",
         "Amentities":""  
@@ -309,7 +309,7 @@
         "id":"35",
         "Name":"Ikweta Safari Camp",
         "Destination":"Meru National Park ",
-        "Picture":"",
+        "Picture":"https://media-cdn.tripadvisor.com/media/photo-s/16/f7/07/67/zebra-tent.jpg",
         "Price Per night":"KSH 27,604",
         "Rating":"4 Star Hotel",
         "Amentities":""  
