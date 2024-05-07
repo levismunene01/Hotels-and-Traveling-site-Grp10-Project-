@@ -226,29 +226,29 @@
     },
     {
         "id":"26",
-        "Name":"",
-        "Destination":"",
+        "Name":"Lion in the sun Billionaire Retreat Malindi ",
+        "Destination":"Malindi",
         "Picture":"",
-        "Price Per night":"",
-        "Rating":"",
+        "Price Per night":"KSH 23,119",
+        "Rating":"5 Star Hotel",
         "Amentities":""  
     },
     {
         "id":"27",
-        "Name":"",
-        "Destination":"",
+        "Name":"Saffron Garden Malindi",
+        "Destination":"Malindi",
         "Picture":"",
-        "Price Per night":"",
-        "Rating":"",
+        "Price Per night":"KSH 8.765",
+        "Rating":"4 Star Hotel",
         "Amentities":""  
     },
     {
         "id":"28",
-        "Name":"",
-        "Destination":"",
+        "Name":"Hotel Villa Malindi",
+        "Destination":"Malindi",
         "Picture":"",
-        "Price Per night":"",
-        "Rating":"",
+        "Price Per night":"KSH 18,090",
+        "Rating":"3 Star Hotel",
         "Amentities":""  
     },
     {
