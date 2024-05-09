@@ -50,7 +50,7 @@ const Search = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
       <div>
-        <h3>Results:</h3>
+        <h3>Show Results:</h3>
         <ul>
           {filteredHotels.map((hotel, index) => (
             <li key={index}>
