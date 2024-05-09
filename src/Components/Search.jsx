@@ -1,51 +1,63 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const Search = () => {
   const [hotels, setHotels] = useState([]);
-  const [searchResults, setSearchResults] = useState([]);
+  const [filteredHotels, setFilteredHotels] = useState([]);
+  const [searchCriteria, setSearchCriteria] = useState({
+    pricePerNight: '',
+    destination: '',
+    rating: ''
+  });
 
   useEffect(() => {
-    const fetchHotels = async () => {
-      try {
-        const response = await fetch('http://localhost:4000/Hotels');
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        const data = await response.json();
-        setHotels(data);
-        setSearchResults(data); 
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchHotels();
+    axios.get('http://localhost:4000/Hotels')
+      .then(response => {
+        setHotels(response.data);
+        setFilteredHotels(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching hotels data:', error);
+      });
   }, []);
 
-  const handleSearch = (searchData) => {
-    const filteredResults = hotels.filter(hotel => {
-      const locationMatch = hotel.location.toLowerCase().includes(searchData.location.toLowerCase());
-      const priceInRange = (!searchData.minPrice || hotel.price >= searchData.minPrice) && (!searchData.maxPrice || hotel.price <= searchData.maxPrice);
-      return locationMatch && priceInRange;
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setSearchCriteria({
+      ...searchCriteria,
+      [name]: value
     });
+  };
 
-    setSearchResults(filteredResults);
+  const handleSearch = () => {
+    let filtered = hotels.filter(hotel => {
+      return (
+        (searchCriteria.pricePerNight === '' || hotel.pricePerNight <= parseInt(searchCriteria.pricePerNight)) &&
+        (searchCriteria.destination === '' || hotel.destination.toLowerCase().includes(searchCriteria.destination.toLowerCase())) &&
+        (searchCriteria.rating === '' || hotel.rating >= parseInt(searchCriteria.rating))
+      );
+    });
+    setFilteredHotels(filtered);
   };
 
   return (
     <div>
-      <h1>Hotel Search</h1>
-      <Search onSearch={handleSearch} />
+      <h2>Search Hotels</h2>
       <div>
-        {/* Render search results */}
-        {searchResults.map((hotel, index) => (
-          <div key={index}>
-            <h2>{hotel.name}</h2>
-            <p>Destination: {hotel.Destination}</p>
-            <p>Price Per Night: {hotel.price_Per_night}</p>
-            <p>Rating:{hotel.Rating}</p>
-          </div>
-        ))}
+        <input type="number" name="pricePerNight" placeholder="Max Price per Night" value={searchCriteria.pricePerNight} onChange={handleInputChange} />
+        <input type="text" name="destination" placeholder="Destination" value={searchCriteria.destination} onChange={handleInputChange} />
+        <input type="number" name="rating" placeholder="Min Rating" value={searchCriteria.rating} onChange={handleInputChange} />
+        <button onClick={handleSearch}>Search</button>
+      </div>
+      <div>
+        <h3>Results:</h3>
+        <ul>
+          {filteredHotels.map((hotel, index) => (
+            <li key={index}>
+              <strong>{hotel.name}</strong> - {hotel.destination}, ${hotel.pricePerNight}/night, Rating: {hotel.rating}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
