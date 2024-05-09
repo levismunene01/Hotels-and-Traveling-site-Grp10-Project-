@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 import Footer from "./Components/Footer";
 import Search from "./Components/Search";
+
 function App() {
   return (
     <Router>
