@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Search from './Search';
 
 const Search = () => {
   const [hotels, setHotels] = useState([]);
@@ -8,7 +7,7 @@ const Search = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await fetch('http://localhost:3000/Hotels');
+        const response = await fetch('http://localhost:4000/Hotels');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
