@@ -20,16 +20,16 @@ Clone the repository to your local machine:git@github.com:levismunene01/Hotels-a
 
 Navigate to the project directory: cd HotelsandTravelingsiteGrp10Project
 
-Installation Requirements
+Installation Requirements:
 Must Have Git
 
 Link to Live Site On GitHub Pages:
 https://github.com/levismunene01/Hotels-and-Traveling-site-Grp10-Project-
 
-Technologies Used 
-REACT
-Github
-Bootstrap
+Technologies Used :
+REACT,
+Github,
+Bootstrap.
 
 Copyright and License Information: This project is licensed under the MIT License - see the LICENSE file for details. copyright (c) 2024
 
