@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
 const Search = () => {
   const [hotels, setHotels] = useState([]);
@@ -11,10 +10,11 @@ const Search = () => {
   });
 
   useEffect(() => {
-    axios.get('http://localhost:4000/Hotels')
-      .then(response => {
-        setHotels(response.data);
-        setFilteredHotels(response.data);
+    fetch('http://localhost:4000/Hotels')
+      .then(response => response.json())
+      .then(data => {
+        setHotels(data);
+        setFilteredHotels(data);
       })
       .catch(error => {
         console.error('Error fetching hotels data:', error);
