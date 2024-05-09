@@ -1,23 +1,28 @@
-import React from "react";
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
-import Footer from "./Components/Footer";
-function App() {
+import { Grid, GridItem,  } from "@chakra-ui/react";
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+
+const App = () => {
   return (
-    <Router>
-      <div className="App">
+    <Grid
+      templateAreas={`"header"
+                      "hotellist"
+                      "footer"`}
+      templateRows={'auto 1fr auto'}
+      h='100vh'
+      gap='1'
+      color='blackAlpha.700'
+      fontWeight='bold'
+    >
+      <GridItem bg='orange.300' area={'header'}>
         <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/destination" component={Destination} />
-          <Route path="/hotels" exact component={HotelList} />
-          <Route path="/hotels/:hotelId" component={HotelDetail} />
-          <Route path="/search" component={Search} />
-          <Route path="/booking" component={Booking} />
-        </Switch>
+      </GridItem>
+     
+      <GridItem bg='blue.300' area={'footer'}>
         <Footer />
-      </div>
-    </Router>
+      </GridItem>
+    </Grid>
   );
-}
+};
 
 export default App;
