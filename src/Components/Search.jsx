@@ -14,7 +14,7 @@ const Search = () => {
         }
         const data = await response.json();
         setHotels(data);
-        setSearchResults(data); // Initially display all hotels
+        setSearchResults(data); 
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -42,9 +42,9 @@ const Search = () => {
         {searchResults.map((hotel, index) => (
           <div key={index}>
             <h2>{hotel.name}</h2>
-            <p>Location: {hotel.location}</p>
-            <p>Price: {hotel.price}</p>
-            {/* Add more hotel details as needed */}
+            <p>Destination: {hotel.Destination}</p>
+            <p>Price Per Night: {hotel.price_Per_night}</p>
+            <p>Rating:{hotel.Rating}</p>
           </div>
         ))}
       </div>
