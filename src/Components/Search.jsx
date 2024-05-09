@@ -10,7 +10,7 @@ const Search = () => {
   });
 
   useEffect(() => {
-    fetch('http://localhost:4000/Hotels')
+    fetch('https://hotels-gicm.onrender.com/todo')
       .then(response => response.json())
       .then(data => {
         setHotels(data);
