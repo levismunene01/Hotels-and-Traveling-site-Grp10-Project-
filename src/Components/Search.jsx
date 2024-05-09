@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Search from './Search';
 
-const HotelSearchPage = () => {
+const Search = () => {
   const [hotels, setHotels] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
 
@@ -52,4 +52,4 @@ const HotelSearchPage = () => {
   );
 };
 
-export default HotelSearchPage;
+export default Search;
