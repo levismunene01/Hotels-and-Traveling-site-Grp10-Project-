@@ -18,5 +18,5 @@ function Footer() {
     </footer>
   );
 }
-
+//Export the Footer component as default
 export default Footer;
