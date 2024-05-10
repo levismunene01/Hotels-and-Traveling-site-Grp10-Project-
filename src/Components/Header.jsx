@@ -1,40 +1,36 @@
 
-import { Grid, Input, Flex, Box } from "@chakra-ui/react";
-import {  FaPhone } from 'react-icons/fa';
+import { Box, Image, Flex, Text, Button } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
+ // Replace with the actual path to your logo image
 
 const Header = () => {
-  const handleContactClick = () => {
-    // Logic to navigate to footer
-    console.log("Navigate to footer");
-  };
-
   return (
-    <Grid
-      templateColumns="1fr 3fr 1fr"
-      gap={6}
-      bg="Navy Blue"
-      py={4}
-      px={6}
+    <Box
+      as="header"
+      borderBottom="1px solid #e2e8f0"
+      padding="1rem"
+      display="flex"
+      justifyContent="space-between"
       alignItems="center"
     >
-      {/* Left side search */}
-      <Flex alignItems="center" >
+      <Image src={'https://www.google.com/imgres?q=falcon%20c%2B%2B&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100069236200562&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Ffalconcpp%2F%3Flocale%3Des_LA&docid=QDFftQfRb3B2JM&tbnid=6MVorFBepb50iM&vet=12ahUKEwibgr3d0YKGAxU1zAIHHVSwA2IQM3oECEoQAA..i&w=256&h=256&hcb=2&ved=2ahUKEwibgr3d0YKGAxU1zAIHHVSwA2IQM3oECEoQAA'} alt="Hotel Logo" boxSize="50px" objectFit="contain" />
+
+      <Flex align="center">
+        <Text fontSize="lg" fontWeight="bold" mr={50}>
+          MAGENDO TOURS TRAVELING AND HOTELS
+        </Text>
        
-        <Input type="text" placeholder="Search hotels...."style={{ fontSize: '1.2rem', padding: '0.5rem', background: 'Aquamarine', borderRadius:'12cm'}} />
+        <Text fontSize="lg" fontWeight="bold" mr={4}>
+          Services
+        </Text>
+        
+        <NavLink to={'/About'} >
+        <Button colorScheme="blue" variant="outline">
+          About
+        </Button>
+        </NavLink>
       </Flex>
-
-      <Box />
-
-      {/* Right side contact and calendar */}
-      <Flex justifyContent="flex-end" alignItems="center">
-        <Input placeholder='Select Date and Time' size='md' type='datetime-local' mr={4} style={{ fontSize: '1.2rem', padding: '0.5rem', borderRadius:'14cm'}} />
-        <Box as="button" onClick={handleContactClick} style={{ background: 'none', border: 'none', cursor: 'pointer',  }}>
-          <FaPhone size={30} />
-        </Box>
-        <Box ml={2}>Contact Us</Box>
-      </Flex>
-    </Grid>
-    
+    </Box>
   );
 };
 

@@ -1,14 +1,16 @@
-
 import { Grid, GridItem, Box } from "@chakra-ui/react";
-import Header from './Components/Header';
-import HotelList from './Components/HotelList';
-import Footer from './Components/Footer';
-// import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Search from './Components/Search';
-import Filter from './Components/Filter';
+import Header from "../Header";
+import Filter from "../Filter";
+import Search from "../Search";
+import HotelList from "../HotelList";
+import Footer from "../Footer";
 
-function App() {
+
+
+function Home() {
   return (
+    <div>
+       
     <Grid
       templateAreas={`"header"
                       "hotellist"
@@ -33,7 +35,9 @@ function App() {
         <Footer />
       </GridItem>
     </Grid>
-  );
+  
+    </div>
+  )
 }
 
-export default App;
+export default Home
