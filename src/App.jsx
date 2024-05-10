@@ -1,25 +1,20 @@
-import React from "react";
-import {BrowserRouter as Router,Route,Switch, Routes} from 'react-router-dom'
-import Footer from "./Components/Footer";
-import Search from "./Components/Search";
+import React from 'react';
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom';
+import Destination from  "./Components/Destination";
+import HotelList from  "./Components/HotelList";
+import HotelDetails from "./Components/HotelDetails"
 
-function App() {
+const App = ()=>{
   return (
     <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/destination" component={Destination} />
-          <Route path="/hotels" exact component={HotelList} />
-          <Route path="/hotels/:hotelId" component={HotelDetail} />
-          <Route path="/search" component={Search} />
-          <Route path="/booking" component={Booking} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+      <Routes>
+        {/* <Route exact path="/" element={<Home/>} /> */}
+        <Route path="/Destination" Component={Destination} />
+        <Route path="/HotelList" Component={HotelList} />
+        <Route path="/HotelDetails" Component={HotelDetails} />
+      </Routes>
+      </Router>
   );
-}
+};
 
 export default App;
