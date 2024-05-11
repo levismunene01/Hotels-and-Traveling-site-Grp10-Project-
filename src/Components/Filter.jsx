@@ -1,9 +1,5 @@
 import React from 'react';
 
-
-
-
-
 const Filter = ({ onFilterChange }) => {
   // Define state for filter criteria
   const [priceRange, setPriceRange] = React.useState('');
