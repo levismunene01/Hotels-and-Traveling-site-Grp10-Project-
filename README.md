@@ -28,7 +28,7 @@ https://github.com/levismunene01/Hotels-and-Traveling-site-Grp10-Project-
 Technologies Used :
 REACT,
 Github,
-chakra ul.
+chakra ui.
 
 
 Copyright and License Information: This project is licensed under the MIT License - see the LICENSE file for details. copyright (c) 2024
