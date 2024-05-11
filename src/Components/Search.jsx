@@ -50,11 +50,12 @@ const Search = () => {
         <input type="text" name="destination" placeholder="Destination" value={searchCriteria.destination} onChange={handleInputChange} />
        
         <button onClick={handleSearch}>Search</button>
-        
+     
+       
       </div>
       <div>
         <h3>Results:</h3>
-
+       
       </div>
     </div>
   );
