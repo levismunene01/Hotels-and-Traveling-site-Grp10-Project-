@@ -1,4 +1,4 @@
-import React from 'react';
+
 // Footer component containing links to important pages
 function Footer() {
   return (

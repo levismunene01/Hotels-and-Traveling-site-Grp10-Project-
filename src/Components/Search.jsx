@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Search = () => {
   const [hotels, setHotels] = useState([]);
-  const [filteredHotels, setFilteredHotels] = useState([]);
+  const [ setFilteredHotels] = useState([]);
   const [searchCriteria, setSearchCriteria] = useState({
     pricePerNight: '',
     destination: '',
-    rating: ''
+    rating: '',
+    hotelName: '' // Add hotelName to search criteria
   });
 
   useEffect(() => {
     fetch('https://hotels-gicm.onrender.com/todo')
       .then(response => response.json())
-      .then(data => {
-        setHotels(data);
-        setFilteredHotels(data);
+      .then((hotels) => {
+        setHotels(hotels);
+        setFilteredHotels(hotels);
       })
       .catch(error => {
-        console.error('Error fetching hotels data:', error);
+        console.error('Error :', error);
       });
-  }, []);
+  }, );
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +35,8 @@ const Search = () => {
       return (
         (searchCriteria.pricePerNight === '' || hotel.pricePerNight <= parseInt(searchCriteria.pricePerNight)) &&
         (searchCriteria.destination === '' || hotel.destination.toLowerCase().includes(searchCriteria.destination.toLowerCase())) &&
-        (searchCriteria.rating === '' || hotel.rating >= parseInt(searchCriteria.rating))
+        (searchCriteria.rating === '' || hotel.rating >= parseInt(searchCriteria.rating)) &&
+        (searchCriteria.hotelName === '' || hotel.name.toLowerCase().includes(searchCriteria.hotelName.toLowerCase())) // Filter by hotel name
       );
     });
     setFilteredHotels(filtered);
@@ -44,20 +46,16 @@ const Search = () => {
     <div>
       <h2>Search Hotels</h2>
       <div>
-        <input type="number" name="pricePerNight" placeholder="Max Price per Night" value={searchCriteria.pricePerNight} onChange={handleInputChange} />
+        <input type="text" name="hotelName" placeholder="Hotel Name" value={searchCriteria.hotelName} onChange={handleInputChange} /> {/* Add input for hotel name */}
         <input type="text" name="destination" placeholder="Destination" value={searchCriteria.destination} onChange={handleInputChange} />
         <input type="number" name="rating" placeholder="Min Rating" value={searchCriteria.rating} onChange={handleInputChange} />
         <button onClick={handleSearch}>Search</button>
+        <button onClick={() => setSearchCriteria({ pricePerNight: '', destination: '', rating: '', hotelName: '' })}>Reset</button>
+
       </div>
       <div>
-        <h3>Show Results:</h3>
-        <ul>
-          {filteredHotels.map((hotel, index) => (
-            <li key={index}>
-              <strong>{hotel.name}</strong> - {hotel.destination}, ${hotel.pricePerNight}/night, Rating: {hotel.rating}
-            </li>
-          ))}
-        </ul>
+        <h3>Results:</h3>
+
       </div>
     </div>
   );

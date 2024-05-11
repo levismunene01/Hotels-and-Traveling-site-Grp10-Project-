@@ -1,5 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
+
+
+
+
 
 const Filter = ({ onFilterChange }) => {
   // Define state for filter criteria
@@ -57,7 +60,7 @@ const Filter = ({ onFilterChange }) => {
 
       {/* Apply Filter button */}
       <button onClick={handleFilterChange}>Apply Filter</button>
-      <Footer/>
+
     </div>
   );
 };
