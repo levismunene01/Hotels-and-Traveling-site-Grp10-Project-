@@ -4,8 +4,8 @@ import About from "./About";
 import Contact from "./Contact";
 import TermOfServices from "./TermOfServices";
 import Support from "./Support";
-
-
+import Blog from "./Blog";
+import PrivacyStatement from "./PrivacyStatement:";
 
 
 
@@ -20,12 +20,20 @@ const router = createBrowserRouter([
     path: '/about',
     element: <About/>
 },
-{  path: '/contact',
+{
+    path: 'blog',
+    element: <Blog/>
+},
+{  
+    path: '/contact',
 element: <Contact/>
     
 },
+{ path:'/privacy', 
+element: <PrivacyStatement/>
+},
 {
-    path: '/termOfServices',
+    path: '/terms',
     element: <TermOfServices/>
 
 },

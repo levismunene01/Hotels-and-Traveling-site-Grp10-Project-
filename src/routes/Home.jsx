@@ -1,9 +1,18 @@
+import Filter from "../Components/Filter"
+import Search from "../Components/Search"
+import HotelList from "../Components/HotelList"
+import Header from "../Components/Header"
+import Footer from "../Components/Footer"
+
+import { Grid, GridItem, Box } from "@chakra-ui/react";
+
+
 
 
 function Home() {
   return (
     <div>
-        return (
+       
     <Grid
       templateAreas={`"header"
                       "content"
@@ -27,7 +36,7 @@ function Home() {
         <Footer />
       </GridItem>
     </Grid>
-  );
+  
       
     </div>
   )

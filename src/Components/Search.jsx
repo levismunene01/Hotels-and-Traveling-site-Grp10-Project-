@@ -48,10 +48,9 @@ const Search = () => {
       <div>
         <input type="text" name="hotelName" placeholder="Hotel Name" value={searchCriteria.hotelName} onChange={handleInputChange} /> {/* Add input for hotel name */}
         <input type="text" name="destination" placeholder="Destination" value={searchCriteria.destination} onChange={handleInputChange} />
-        <input type="number" name="rating" placeholder="Min Rating" value={searchCriteria.rating} onChange={handleInputChange} />
+       
         <button onClick={handleSearch}>Search</button>
-        <button onClick={() => setSearchCriteria({ pricePerNight: '', destination: '', rating: '', hotelName: '' })}>Reset</button>
-
+        
       </div>
       <div>
         <h3>Results:</h3>

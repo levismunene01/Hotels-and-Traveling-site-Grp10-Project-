@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Flex, Heading } from '@chakra-ui/react';
 
 const Header = () => {
