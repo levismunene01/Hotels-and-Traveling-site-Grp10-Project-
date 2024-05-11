@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 // Footer component containing links to important pages
 function Footer() {
@@ -5,7 +6,9 @@ function Footer() {
     // Footer section of  bottom page
     <footer>
       <ul>
+       <NavLink to={'/About'}>
         <li><a href="/about">About Us</a></li>
+        </NavLink> 
         <li><a href="/contact">Contact</a></li>
         <li><a href="/terms">Terms of Service</a></li>
         <li><a href="/privacy">Privacy Policy</a></li>
