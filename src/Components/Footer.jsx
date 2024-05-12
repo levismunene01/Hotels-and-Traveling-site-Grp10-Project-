@@ -2,7 +2,7 @@
 function Footer() {
   return (
     // Footer section of  bottom page
-    <footer>
+    <footer className='Footer'>
       <ul>
         <li>
           <a href="/about">About Us</a>
