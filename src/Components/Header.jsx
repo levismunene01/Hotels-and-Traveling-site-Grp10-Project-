@@ -17,7 +17,7 @@ const Header = () => {
       py={4}
       px={8}
       bg="gray.800"
-      color="white"
+      color="black"
       borderBottom="1px solid #0364e2"
     >
       <Heading as="h1" fontSize="2xl" fontWeight={'bold'}>
