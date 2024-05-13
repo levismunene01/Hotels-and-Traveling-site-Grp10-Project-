@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import {
   Box,
   Image,
@@ -20,11 +19,6 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { AiFillStar } from "react-icons/ai";
-
-
-
-
-
 
 const HotelList = () => {
   const [hotels, setHotels] = useState([]);
@@ -62,78 +56,63 @@ const HotelList = () => {
           borderRadius="lg"
           overflow="hidden"
           m={4}
+          boxShadow="md"
         >
-          
-            <Box h="200px" w="100%">
-              <Image
-                h="100%"
-                w="100%"
-                objectFit="cover"
-                src={hotel.Picture}
-                alt={hotel.Name}
-              />
-            </Box>
-            <Box p="6">
-              <Box d="flex" alignItems="baseline">
-                <Text fontSize="xl" fontWeight="semibold" mr={2}>
-                  {hotel.Name}
-                </Text>
-                <Flex alignItems="center">
-                  {[...Array(hotel.Rating)].map((_, index) => (
-                    <Icon key={index} as={AiFillStar} color="yellow" />
-                  ))}
-                </Flex>
-              </Box>
-              <Text fontSize="sm" mt={2}>
-                Destination: {hotel.Destination}
+          <Box h="200px" w="100%">
+            <Image
+              h="100%"
+              w="100%"
+              objectFit="cover"
+              src={hotel.Picture}
+              alt={hotel.Name}
+            />
+          </Box>
+          <Box p="6">
+            <Box d="flex" alignItems="baseline">
+              <Text fontSize="xl" fontWeight="semibold" mr={2}>
+                {hotel.Name}
               </Text>
-
+              <Flex alignItems="center">
+                {[...Array(hotel.Rating)].map((_, index) => (
+                  <Icon key={index} as={AiFillStar} color="yellow" />
+                ))}
+              </Flex>
             </Box>
-        
-          <Button
-                mt={4}
-                colorScheme="blue"
-                variant="solid"
-                onClick={openModal}
-              >
-                Book Hotel
-              </Button>
+            <Text fontSize="sm" mt={2}>
+              Destination: {hotel.Destination}
+            </Text>
+          </Box>
+          <Button mt={4} colorScheme="blue" variant="solid" onClick={openModal}>
+            Book Hotel
+          </Button>
         </Box>
       ))}
 
       <Modal isOpen={isModalOpen} onClose={closeModal} size="sm">
         <ModalOverlay />
         <ModalContent background={"black"}>
-          <ModalHeader>Book Hotel</ModalHeader>
+          <ModalHeader color="white">Book Hotel</ModalHeader>
 
           <ModalBody>
-            {/* Your booking form goes here */}
-
             <FormControl mb={2}>
               <FormLabel>
-                <h3>Check-in Date</h3>
+                <h3 style={{ color: "white" }}>Check-in Date</h3>
               </FormLabel>
-              <Input
-                type="date"
-                style={{ fontSize: "1.2rem", padding: "0.5rem" }}
-              />
+              <Input type="date" style={{ fontSize: "1.2rem", padding: "0.5rem" }} />
             </FormControl>
 
             <FormControl mb={4}>
               <FormLabel>
-                <h3>Check-out Date</h3>
+                <h3 style={{ color: "white" }}>Check-out Date</h3>
               </FormLabel>
-              <Input
-                type="date"
-                style={{ fontSize: "1.1rem", padding: "0.4rem" }}
-              />
+              <Input type="date" style={{ fontSize: "1.1rem", padding: "0.4rem" }} />
             </FormControl>
             <FormControl mb={4}>
-              <FormLabel>Number of Guests</FormLabel>
+              <FormLabel style={{ color: "white" }}>Number of Guests</FormLabel>
               <Input type="number" />
             </FormControl>
             <FormControl mb={4}>
-              <FormLabel>Room Type</FormLabel>
+              <FormLabel style={{ color: "white" }}>Room Type</FormLabel>
               <Select>
                 <option value="single">Single</option>
                 <option value="double">Double</option>
@@ -141,15 +120,15 @@ const HotelList = () => {
               </Select>
             </FormControl>
             <FormControl mb={4}>
-              <FormLabel>Special Requests</FormLabel>
+              <FormLabel style={{ color: "white" }}>Special Requests</FormLabel>
               <Textarea />
             </FormControl>
             <FormControl mb={4}>
-              <FormLabel>Contact Information</FormLabel>
+              <FormLabel style={{ color: "white" }}>Contact Information</FormLabel>
               <Input type="text" />
             </FormControl>
             <FormControl mb={4}>
-              <FormLabel>Payment Information</FormLabel>
+              <FormLabel style={{ color: "white" }}>Payment Information</FormLabel>
               <Input type="text" />
             </FormControl>
           </ModalBody>
