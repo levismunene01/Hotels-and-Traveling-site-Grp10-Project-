@@ -40,9 +40,79 @@
 .read-the-docs {
   color: #888;
 }
-.Footer {
-  background-color: beige;
+.footer {
+  background-color:silver;
+  padding: 100px;
+  width: 1700px;
+}
+
+.footer-content {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color:black;
+}
+
+.link:hover {
+  color: #000;
+}
+.search-container {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 700%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: #fff;
-  text-align: center;
-  padding: 4rem 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hotel-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hotel-card h2 {
+  margin-top: 0;
+}
+
+.hotel-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.hotel-card p {
+  margin: 5px 0;
+}
+body{
+  font-family: Arial, sans-serif;
+    background-color: lavender;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
