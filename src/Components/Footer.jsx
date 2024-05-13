@@ -1,30 +1,30 @@
-// Footer component containing links to important pages
+import '../App.css';
+
 function Footer() {
   return (
-    // Footer section of  bottom page
-    <footer className='Footer'>
-      <ul>
-        <li>
-          <a href="/about">About Us</a>
+    <footer className="footer">
+    <div className="footer-content">
+      <ul className="list">
+        <li className="item">
+          <a href="/about" className="link">About Us</a>
         </li>
-        <li>
-          <a href="/contact">Contact</a>
+        <li className="item">
+          <a href="/contact" className="link">Contact</a>
         </li>
-        <li>
-          <a href="/terms">Terms of Service</a>
+        <li className="item">
+          <a href="/terms" className="link">Terms of Service</a>
         </li>
-        <li>
-          <a href="/privacy">Privacy Statement</a>
+        <li className="item">
+          <a href="/privacy" className="link">Privacy Statement</a>
         </li>
-
-        <li>
-          <a href="/blog">Blog</a>
+        <li className="item">
+          <a href="/blog" className="link">Blog</a>
         </li>
-
-        <li>
-          <a href="/support">Support</a>
+        <li className="item">
+          <a href="/support" className="link">Support</a>
         </li>
       </ul>
+      </div>
     </footer>
   );
 }
