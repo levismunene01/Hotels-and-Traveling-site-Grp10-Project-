@@ -1,64 +1,63 @@
 import { useState, useEffect } from 'react';
+import '../App.css';
 
-const Search = () => {
-  const [hotels, setHotels] = useState([]);
-  const [ setFilteredHotels] = useState([]);
-  const [searchCriteria, setSearchCriteria] = useState({
-    pricePerNight: '',
-    destination: '',
-    rating: '',
-    hotelName: '' // Add hotelName to search criteria
-  });
+function Search() {
+  const [destination, setDestination] = useState('');
+  const [allHotels, setAllHotels] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
-    fetch('https://hotels-gicm.onrender.com/todo')
-      .then(response => response.json())
-      .then((hotels) => {
-        setHotels(hotels);
-        setFilteredHotels(hotels);
-      })
-      .catch(error => {
-        console.error('Error :', error);
-      });
-  }, );
+    fetchHotelData();
+  }, []);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setSearchCriteria({
-      ...searchCriteria,
-      [name]: value
-    });
+  const fetchHotelData = async () => {
+    try {
+      const response = await fetch('https://hotels-gicm.onrender.com/todo');
+      if (!response.ok) {
+        throw new Error('Failed to fetch hotel data');
+      }
+      const data = await response.json();
+      setAllHotels(data.hotels);
+      setSearchResults(data.hotels);
+    } catch (error) {
+      console.error('Error fetching hotel data:', error);
+    }
   };
 
   const handleSearch = () => {
-    let filtered = hotels.filter(hotel => {
-      return (
-        (searchCriteria.pricePerNight === '' || hotel.pricePerNight <= parseInt(searchCriteria.pricePerNight)) &&
-        (searchCriteria.destination === '' || hotel.destination.toLowerCase().includes(searchCriteria.destination.toLowerCase())) &&
-        (searchCriteria.rating === '' || hotel.rating >= parseInt(searchCriteria.rating)) &&
-        (searchCriteria.hotelName === '' || hotel.name.toLowerCase().includes(searchCriteria.hotelName.toLowerCase())) // Filter by hotel name
-      );
-    });
-    setFilteredHotels(filtered);
+    const formattedDestination = destination.charAt(0).toUpperCase() + destination.slice(1);
+    const filteredHotels = allHotels.filter(
+      hotel => hotel.destination === formattedDestination
+    );
+    setSearchResults(filteredHotels);
   };
 
   return (
     <div>
-      <h2>Search Hotels</h2>
+      <input
+        type="text"
+        value={destination}
+        onChange={e => setDestination(e.target.value)}
+        placeholder="Enter destination"
+      />
+      <button onClick={handleSearch} className="search-button">Search</button>
+
       <div>
-        <input type="text" name="hotelName" placeholder="Hotel Name" value={searchCriteria.hotelName} onChange={handleInputChange} /> {/* Add input for hotel name */}
-        <input type="text" name="destination" placeholder="Destination" value={searchCriteria.destination} onChange={handleInputChange} />
-       
-        <button onClick={handleSearch}>Search</button>
-     
-       
-      </div>
-      <div>
-        <h3>Results:</h3>
-       
+        {searchResults && searchResults.length > 0 && (
+          searchResults.map((hotel, index) => (
+            <div key={index} className="hotel-card">
+              <h2>{hotel.Name}</h2>
+              <p>Destination: {hotel.Destination}</p>
+              <img src={hotel.Picture} alt={hotel.Name} />
+              <p>Price Per Night: ${hotel.PricePernight}</p>
+              <p>Rating: {hotel.Rating}</p>
+              <p>Amenities: {hotel.Amenities.join(', ')}</p>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
-};
+}
 
 export default Search;
