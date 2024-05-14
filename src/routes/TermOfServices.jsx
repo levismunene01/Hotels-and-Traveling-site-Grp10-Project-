@@ -15,7 +15,7 @@ const TermsOfService = () => {
         <FaRegFileAlt /> Terms of Service
       </Heading>
       <Text>
-        Welcome to Magendo Tours, Hotels, and Travelling! Our terms of service outline the rules and regulations for the use of our website.
+        Welcome to Quicksafe Tours, Hotels, and Travelling! Our terms of service outline the rules and regulations for the use of our website.
       </Text>
       {/* Add detailed terms of service here */}
     </Box>
