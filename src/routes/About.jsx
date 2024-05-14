@@ -16,7 +16,7 @@ const About = () => {
         <FaInfoCircle /> About Us
       </Heading>
       <Text>
-        Magendo Tours, Hotels, and Travelling is your one-stop destination for all your travel needs.
+        Quicksafe Tours, Hotels, and Travelling is your one-stop destination for all your travel needs.
       </Text>
       <List mt={4}>
         <ListItem>Our mission is to make the World a best place for people to travel</ListItem>
@@ -24,7 +24,7 @@ const About = () => {
         <ListItem>Based in NAIROBI/KENYA</ListItem>
         <ListItem>Contact us:</ListItem>
         <List ml={4}>
-          <ListItem>Email: info@magendo.com,Levismunene@gmail.com</ListItem>
+          <ListItem>Email: info@quicksafe.com,Levismunene@gmail.com</ListItem>
           <ListItem>Phone: +254748288593</ListItem>
           <ListItem>Address: 123 Main Street, NairobiCity, KENYA</ListItem>
         </List>
