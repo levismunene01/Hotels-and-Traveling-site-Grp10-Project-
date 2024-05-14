@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
         <FaLock /> Privacy Policy
       </Heading>
       <Text>
-        At Magendo Tours, Hotels, and Travelling, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your personal information.
+        At Quicksafe Tours, Hotels, and Travelling, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your personal information.
       </Text>
       <Text mt={4}>
         <strong>Information We Collect:</strong><br/>
