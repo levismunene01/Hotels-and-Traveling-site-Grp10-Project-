@@ -2,7 +2,7 @@ Hosted Project:
 https://hotels-and-travelling-site-group-10.vercel.app/
 
 ##Project Name: 
-Magendo Tours Hotels And Travelling
+Quicksafe Tours Hotels And Travelling
 
 Author's Names: 
 Margaret Mungai,
