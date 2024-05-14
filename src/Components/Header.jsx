@@ -21,7 +21,7 @@ const Header = () => {
       borderBottom="1px solid #0364e2"
     >
       <Heading as="h1" fontSize="2xl" fontWeight={'bold'}>
-        MAGENDO TOURS TRAVELINGS AND HOTELS
+        QUICKSAFE TOURS TRAVELINGS AND HOTELS
       </Heading>
       <Flex>
         <Button
