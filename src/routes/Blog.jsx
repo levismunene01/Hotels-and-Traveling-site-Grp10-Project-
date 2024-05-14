@@ -15,7 +15,7 @@ const Features = () => {
         <FaStar /> Features
       </Heading>
       <Text>
-        Discover the features that make Magendo Tours, Hotels, and Travelling stand out:
+        Discover the features that make QuickSafe Tours, Hotels, and Travelling stand out:
       </Text>
       <List mt={4}>
         <ListItem>Easy Hotel Booking</ListItem>
