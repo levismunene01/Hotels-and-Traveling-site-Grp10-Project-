@@ -12,7 +12,7 @@ const Support = () => {
         Our dedicated support team is here to assist you with any questions or issues you may have.
       </Text>
       <List mt={4}>
-        <ListItem>Email: support@magendo.com</ListItem>
+        <ListItem>Email: support@quicksafe.com</ListItem>
         <ListItem>Phone: 1-800-123-4567</ListItem>
         <ListItem>Live Chat: Available on our website</ListItem>
       </List>
