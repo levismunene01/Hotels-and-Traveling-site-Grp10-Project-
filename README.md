@@ -1,6 +1,9 @@
 Hosted Project:
 https://hotels-and-traveling-site-grp10-project-um14-7ksbcc5p8.vercel.app
 
+## here is video of our site
+https://youtube.com/shorts/pN776lGWmGg?si=M4DBc3DHOpqThyeb
+
 ##Project Name: 
 Quicksafe Tours Hotels And Travelling
 
