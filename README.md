@@ -1,5 +1,5 @@
 Hosted Project:
-https://hotels-and-travelling-site-group-10.vercel.app/
+https://hotels-and-traveling-site-grp10-project-um14-7ksbcc5p8.vercel.app
 
 ##Project Name: 
 Quicksafe Tours Hotels And Travelling
