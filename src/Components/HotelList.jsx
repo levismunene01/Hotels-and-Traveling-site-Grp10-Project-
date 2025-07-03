@@ -27,14 +27,14 @@ const HotelList = () => {
         {hotels.map((hotel) => (
           <Box
             key={hotel.id}
-            w="300px" // fixed width
-            h="500px" // fixed height
+            w="300px"
+            h="500px"
             bg="white"
             borderRadius="md"
             overflow="hidden"
-            boxShadow="lg"
+            boxShadow="md"
             transition="transform 0.2s"
-            _hover={{ transform: "scale(1.03)" }}
+            _hover={{ transform: "scale(1.02)" }}
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
@@ -46,32 +46,43 @@ const HotelList = () => {
               src={hotel.Picture}
               alt={hotel.Name}
             />
-            <Box p="4" flex="1">
-              <Text fontSize="xl" fontWeight="bold" mb="2" color="blue.700">
-                {hotel.Name}
-              </Text>
-              <Flex align="center" mb="2">
-                {[...Array(hotel.Rating)].map((_, index) => (
-                  <Icon key={index} as={AiFillStar} color="yellow.400" />
-                ))}
-                <Text ml="2" fontSize="sm" color="gray.600">
-                  {hotel.Rating}
+            <Box p="4" flex="1" display="flex" flexDirection="column" justifyContent="space-between">
+              <Box>
+                <Text fontSize="lg" fontWeight="bold" color="blue.800" mb="1">
+                  {hotel.Name}
                 </Text>
-              </Flex>
-              <Text fontSize="sm" mb="1"><strong>Destination:</strong> {hotel.Destination}</Text>
-              <Text fontSize="sm" mb="2"><strong>Price Per Night:</strong> {hotel["Price Per night"]}</Text>
-              <Flex align="center" gap="2" mb="3">
-                <Icon as={FaWifi} color="blue.500" />
-                <Icon as={FaCamera} color="blue.500" />
-                <Icon as={FaHiking} color="blue.500" />
-                <Icon as={FaSpa} color="blue.500" />
-              </Flex>
+
+                <Flex align="center" mb="2">
+                  {[...Array(hotel.Rating)].map((_, index) => (
+                    <Icon key={index} as={AiFillStar} color="yellow.400" />
+                  ))}
+                  <Text ml="2" fontSize="sm" color="gray.600">
+                    {hotel.Rating}
+                  </Text>
+                </Flex>
+
+                <Text fontSize="sm" color="gray.700" mb="1">
+                  Destination: <span style={{ fontWeight: "500" }}>{hotel.Destination}</span>
+                </Text>
+
+                <Text fontSize="md" color="green.600" fontWeight="bold" mb="2">
+                  {hotel["Price Per night"]} / night
+                </Text>
+
+                <Flex align="center" gap="3">
+                  <Icon as={FaWifi} color="blue.500" boxSize={5} />
+                  <Icon as={FaCamera} color="blue.500" boxSize={5} />
+                  <Icon as={FaHiking} color="blue.500" boxSize={5} />
+                  <Icon as={FaSpa} color="blue.500" boxSize={5} />
+                </Flex>
+              </Box>
             </Box>
             <Box p="4">
               <Button
                 colorScheme="blue"
                 w="full"
                 fontWeight="bold"
+                fontSize="sm"
               >
                 Book Now
               </Button>
