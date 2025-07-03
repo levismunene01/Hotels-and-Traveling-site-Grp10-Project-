@@ -1,32 +1,54 @@
-import '../App.css';
+import { Box, Grid, Link, Typography } from '@mui/material'
 
 function Footer() {
   return (
-    <footer className="footer">
-    <div className="footer-content">
-      <ul className="list">
-        <li className="item">
-          <a href="/about" className="link">About Us</a>
-        </li>
-        <li className="item">
-          <a href="/contact" className="link">Contact</a>
-        </li>
-        <li className="item">
-          <a href="/terms" className="link">Terms of Service</a>
-        </li>
-        <li className="item">
-          <a href="/privacy" className="link">Privacy Statement</a>
-        </li>
-        <li className="item">
-          <a href="/blog" className="link">Blog</a>
-        </li>
-        <li className="item">
-          <a href="/support" className="link">Support</a>
-        </li>
-      </ul>
-      </div>
-    </footer>
-  );
+    <Box
+      component="footer"
+      sx={{
+        backgroundColor: '#f5f5f5',
+        py: 4,
+        mt: 4
+      }}
+    >
+      <Grid container spacing={2} justifyContent="center">
+        <Grid item xs={12} md={8}>
+          <Box
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: 2
+            }}
+          >
+            <Link href="/about" underline="hover" color="inherit">
+              About Us
+            </Link>
+            <Link href="/contact" underline="hover" color="inherit">
+              Contact
+            </Link>
+            <Link href="/terms" underline="hover" color="inherit">
+              Terms of Service
+            </Link>
+            <Link href="/privacy" underline="hover" color="inherit">
+              Privacy Statement
+            </Link>
+            <Link href="/blog" underline="hover" color="inherit">
+              Blog
+            </Link>
+            <Link href="/support" underline="hover" color="inherit">
+              Support
+            </Link>
+          </Box>
+        </Grid>
+      </Grid>
+
+      <Box textAlign="center" mt={2}>
+        <Typography variant="body2" color="text.secondary">
+          &copy; {new Date().getFullYear()} QuickSafe Tours & Hotels. All rights reserved.
+        </Typography>
+      </Box>
+    </Box>
+  )
 }
 
-export default Footer;
+export default Footer

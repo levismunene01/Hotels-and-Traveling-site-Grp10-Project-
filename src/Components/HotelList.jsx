@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import {
-  Box, Image, Text, Button, Flex, Icon
+  Box, Image, Text, Button, Flex, Icon, SimpleGrid
 } from "@chakra-ui/react"
 import { AiFillStar } from "react-icons/ai"
 import { FaWifi, FaCamera, FaHiking, FaSpa } from "react-icons/fa"
@@ -22,14 +22,13 @@ const HotelList = () => {
   }, [])
 
   return (
-    <Box p={4} bg="gray.100" minH="100vh">
-      <Flex flexWrap="wrap" justify="center" gap={6}>
+    <Box p={[2, 4]} bg="gray.100" minH="100vh">
+      <SimpleGrid columns={[1, 2, 3]} spacing={6}>
         {hotels.map((hotel) => (
           <Box
             key={hotel.id}
-            w="300px"
-            h="500px"
-            bg="white"
+            w="100%"
+            bg="gray.50" // slight grey background
             borderRadius="md"
             overflow="hidden"
             boxShadow="md"
@@ -40,7 +39,7 @@ const HotelList = () => {
             justifyContent="space-between"
           >
             <Image
-              h="200px"
+              h={["180px", "200px"]}
               w="100%"
               objectFit="cover"
               src={hotel.Picture}
@@ -66,7 +65,7 @@ const HotelList = () => {
                 </Text>
 
                 <Text fontSize="md" color="green.600" fontWeight="bold" mb="2">
-                  {hotel["Price Per night"]} / night
+                  ${hotel["Price Per night"]} / night
                 </Text>
 
                 <Flex align="center" gap="3">
@@ -89,7 +88,7 @@ const HotelList = () => {
             </Box>
           </Box>
         ))}
-      </Flex>
+      </SimpleGrid>
     </Box>
   )
 }

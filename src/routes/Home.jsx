@@ -4,41 +4,39 @@ import HotelList from "../Components/HotelList"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 
-import { Grid, GridItem, Box } from "@chakra-ui/react";
-
-
-
+import { Box } from "@chakra-ui/react"
 
 function Home() {
   return (
-    <div>
-       
-    <Grid
-      templateAreas={`"header"
-                      "content"
-                      "footer"`}
-      gap={4}
-      justifyContent="center"
+    <Box
+      minH="100vh"
+      display="flex"
+      flexDirection="column"
+      bg="gray.50"
     >
-      <GridItem bg='orange.300' area={'header'}>
+      <Box as="header" w="100%" bg="orange.300">
         <Header />
-      </GridItem>
+      </Box>
 
-      <GridItem bg='pink.300' area={'content'}>
-        <Box mt={8}>
-          {/* <Filter /> */}
-          <Search />
-          <HotelList />
-        </Box>
-      </GridItem>
+      <Box
+        as="main"
+        flex="1"
+        bg="pink.300"
+        mt={{ base: 2, md: 4 }}
+        px={{ base: 2, md: 8 }}
+        py={{ base: 4, md: 8 }}
+      >
+        {/* Uncomment when Filter is ready */}
+        {/* <Filter /> */}
 
-      <GridItem bg='blue.300' area={'footer'}>
+        <Search />
+        <HotelList />
+      </Box>
+
+      <Box as="footer" w="100%" bg="blue.300">
         <Footer />
-      </GridItem>
-    </Grid>
-  
-      
-    </div>
+      </Box>
+    </Box>
   )
 }
 

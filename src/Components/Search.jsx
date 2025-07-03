@@ -4,8 +4,9 @@ import {
   TextField,
   Button,
   Card,
- 
   CardMedia,
+  CardContent,
+  Typography,
   Grid
 } from '@mui/material'
 
@@ -42,8 +43,8 @@ function Search() {
   }
 
   return (
-    <Box sx={{ p: 4 }}>
-      <Box sx={{ display: 'flex', gap: 2, mb: 4 }}>
+    <Box sx={{ p: { xs: 2, md: 4 } }}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 2, mb: 4 }}>
         <TextField
           label="Enter destination"
           variant="outlined"
@@ -55,6 +56,7 @@ function Search() {
           variant="contained"
           color="primary"
           onClick={handleSearch}
+          sx={{ width: { xs: '100%', sm: 'auto' } }}
         >
           Search
         </Button>
@@ -64,14 +66,31 @@ function Search() {
         {searchResults && searchResults.length > 0 && (
           searchResults.map((hotel, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="180"
                   image={hotel.Picture}
                   alt={hotel.Name}
                 />
-                </Card>
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    {hotel.Name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Destination: {hotel.Destination}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Price Per Night: ${hotel.PricePernight}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Rating: {hotel.Rating}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Amenities: {hotel.Amenities?.join(', ')}
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
           ))
         )}
