@@ -1,4 +1,4 @@
-import Filter from "../Components/Filter"
+// import Filter from "../Components/Filter"
 import Search from "../Components/Search"
 import HotelList from "../Components/HotelList"
 import Header from "../Components/Header"
@@ -26,7 +26,7 @@ function Home() {
 
       <GridItem bg='pink.300' area={'content'}>
         <Box mt={8}>
-          <Filter />
+          {/* <Filter /> */}
           <Search />
           <HotelList />
         </Box>

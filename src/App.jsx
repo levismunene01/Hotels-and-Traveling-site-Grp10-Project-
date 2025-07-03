@@ -3,7 +3,7 @@ import Header from './Components/Header';
 import HotelList from './Components/HotelList';
 import Footer from './Components/Footer';
 import Search from './Components/Search';
-import Filter from './Components/Filter';
+// import Filter from './Components/Filter';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
 
       <GridItem bg='pink.300' area={'content'}>
         <Box mt={8}>
-          <Filter />
+          {/* <Filter /> */}
           <Search />
           <HotelList />
         </Box>
