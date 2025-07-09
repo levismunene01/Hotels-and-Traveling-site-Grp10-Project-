@@ -4,6 +4,9 @@ import HotelList from "../Components/HotelList"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 
+
+
+
 import { Box } from "@chakra-ui/react"
 
 function Home() {
