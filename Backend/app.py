@@ -1,21 +1,31 @@
 from flask import Flask, request, jsonify
-from flask_jwt_extended import JWTManager, jwt_required
+from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity
 from models import db, Hotel
 from auth import auth
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+
+# Configurations
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['JWT_SECRET_KEY'] = 'supersecretkey'
+app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY')
 
 db.init_app(app)
 jwt = JWTManager(app)
 
+# Register auth blueprint
 app.register_blueprint(auth)
 
+# Create tables
 with app.app_context():
     db.create_all()
 
+# Routes
 @app.route('/hotels', methods=['GET'])
 def get_hotels():
     hotels = Hotel.query.all()
@@ -35,6 +45,8 @@ def get_hotels():
 @app.route('/hotels', methods=['POST'])
 @jwt_required()
 def add_hotel():
+    current_user = get_jwt_identity()
+    print("Current User:", current_user)
     data = request.get_json()
     new_hotel = Hotel(
         name=data['name'],

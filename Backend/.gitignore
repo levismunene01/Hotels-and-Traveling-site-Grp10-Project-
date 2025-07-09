@@ -1,2 +1,3 @@
-DATABASE_URL=postgresql+psycopg2://postgres:@Kanambomnesh1@db.kfftudmzkmkezdeqglfh.supabase.co:5432/postgres
-JWT_SECRET_KEY=supersecretkey
+
+
+.env

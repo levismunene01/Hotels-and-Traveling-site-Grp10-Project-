@@ -9,9 +9,9 @@ class User(db.Model):
 
 class Hotel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(200), nullable=False)
-    destination = db.Column(db.String(200), nullable=False)
-    picture = db.Column(db.String(500), nullable=False)
-    price_per_night = db.Column(db.String(100), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    destination = db.Column(db.String(100), nullable=False)
+    picture = db.Column(db.String(255), nullable=False)
+    price_per_night = db.Column(db.String(50), nullable=False)
     rating = db.Column(db.String(50), nullable=False)
-    amenities = db.Column(db.Text, nullable=True)
+    amenities = db.Column(db.String(255), nullable=False)
