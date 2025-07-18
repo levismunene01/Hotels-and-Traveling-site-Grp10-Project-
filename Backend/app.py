@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity
-from models import db, Hotel
+from models import db, Hotel, User
 from auth import auth
 from dotenv import load_dotenv
 import os
@@ -22,8 +22,13 @@ jwt = JWTManager(app)
 app.register_blueprint(auth)
 
 # Create tables
+
 with app.app_context():
     db.create_all()
+    print("Tables created:", db.metadata.tables.keys())
+
+
+
 
 # Routes
 @app.route('/hotels', methods=['GET'])
