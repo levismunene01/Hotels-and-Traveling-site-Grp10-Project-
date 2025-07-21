@@ -1,7 +1,10 @@
-import { Box, Heading, Text, Flex, Icon, Stack, Divider } from '@chakra-ui/react'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { Box, Heading, Text, Flex, Icon, Stack, Divider, Button } from '@chakra-ui/react'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowLeft } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
+  const navigate = useNavigate()
+
   const phoneNumbers = [
     '+254-748-288-593',
     '+254-797-501-993',
@@ -116,6 +119,23 @@ const Contact = () => {
                 Nairobi, Kenya
               </Text>
             </Flex>
+          </Box>
+
+          <Box textAlign="center">
+            <Button
+              leftIcon={<FaArrowLeft />}
+              colorScheme="blue"
+              variant="solid"
+              size="md"
+              onClick={() => navigate('/')}
+              _hover={{
+                transform: 'scale(1.05)',
+                boxShadow: 'md'
+              }}
+              transition="all 0.2s ease-in-out"
+            >
+              Back to Home
+            </Button>
           </Box>
         </Stack>
       </Box>
