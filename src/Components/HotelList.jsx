@@ -77,14 +77,27 @@ const HotelList = () => {
               </Box>
             </Box>
             <Box p="4">
-              <Button
-                colorScheme="blue"
-                w="full"
-                fontWeight="bold"
-                fontSize="sm"
-              >
-                Book Now
-              </Button>
+            <Button
+  colorScheme="blue"
+  w="full"
+  fontWeight="bold"
+  fontSize="sm"
+  bg="blue.500"
+  color="white"
+  _hover={{
+    bg: "blue.600",
+    transform: "scale(1.03)",
+    boxShadow: "lg"
+  }}
+  _active={{
+    bg: "blue.700",
+    transform: "scale(0.98)"
+  }}
+  transition="all 0.2s ease-in-out"
+>
+  Your Button Text
+</Button>
+
             </Box>
           </Box>
         ))}
